@@ -1,0 +1,27 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "fulfillment-constraint"
+client_id = "294f93c865792a3e157422bba5b7e364"
+application_url = "https://project-incorporated-locations-greene.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://project-incorporated-locations-greene.trycloudflare.com/auth/callback",
+  "https://project-incorporated-locations-greene.trycloudflare.com/auth/shopify/callback",
+  "https://project-incorporated-locations-greene.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-10"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "fulfillment-contraints-store.myshopify.com"
